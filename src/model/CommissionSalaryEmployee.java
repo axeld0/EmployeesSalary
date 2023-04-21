@@ -54,7 +54,7 @@ public class CommissionSalaryEmployee extends Employee{
                 "minimumSalary=" + minimumSalary +
                 ", clients=" + clients +
                 ", commissionPerClient=" + commissionPerClient +
-                "totalSalary =" + getTotalSalary()+"}\n";
+                ", totalSalary =" + getTotalSalary()+"}\n";
     }
 
 

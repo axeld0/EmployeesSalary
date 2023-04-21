@@ -8,8 +8,9 @@ public String higherSalary(Employee[] employees)
     String higher = "";
     for (int i = 0 ; i < employees.length ; i++)
     {
-        if(employees[i].getTotalSalary() > higherS)
+        if(employees[i].getTotalSalary() >= higherS)
         {
+            higherS = employees[i].getTotalSalary();
             higher = employees[i].toString();
         }
     }

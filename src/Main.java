@@ -8,7 +8,6 @@ public class Main {
 
         Employee[] employees = new Employee[4];
 
-
         Employee e1 = new FixedSalaryEmployee("569587A", "Javier", "Gomez", 2008, 1225);
         Employee e2 = new CommissionSalaryEmployee("695235B", "Eva", "Nieto", 2010, 750, 179, 8.10);
         Employee e3 = new CommissionSalaryEmployee("741258C", "Jose", "Ruiz", 2012, 750, 81, 7.90);
@@ -20,8 +19,6 @@ public class Main {
         employees[3] = e4;
 
         Test test = new Test();
-        System.out.println(e1.getSeniority());
-
         System.out.println(test.higherSalary(employees));
         System.out.println(test.toString(employees));
 

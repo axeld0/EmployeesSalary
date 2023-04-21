@@ -27,21 +27,21 @@ public class FixedSalaryEmployee extends Employee{
 
         double increasePercentage = 0;
 
-        if(getSeniority() > 2)
+        if(getSeniority() < 2)
         {
             increasePercentage = 0;
 
         } else if (getSeniority()>=2 && getSeniority()<4)  {
-            increasePercentage = (double) 1.05;
+            increasePercentage = 1.05;
         }
         else if (getSeniority()>=4 && getSeniority()<8){
-            increasePercentage = (double) 1.10;
+            increasePercentage = 1.10;
         }
         else if (getSeniority()>=8 && getSeniority()<15){
-            increasePercentage = (double)1.15;
+            increasePercentage = 1.15;
         }
         else if (getSeniority()>=15){
-            increasePercentage = (double) 1.20;
+            increasePercentage = 1.20;
         }
 
         return increasePercentage;
